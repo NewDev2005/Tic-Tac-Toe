@@ -32,27 +32,34 @@
       if [@one,@two,@three] == %W[X X X] ||  [@one,@two,@three] == %W[O O O]
          puts "\n"
          puts @text
+         return true
       elsif [@four,@five,@six] == %W[X X X] || [@four,@five,@six] == %W[O O O]
          puts "\n"
          puts @text
+         return true
       elsif [@seven,@eight,@nine] == %W[X X X] ||  [@seven,@eight,@nine] == %W[O O O]
          puts "\n"
          puts @text
+         return true
       elsif [@one,@four,@seven] == %W[X X X] ||  [@one,@four,@seven] == %W[O O O]
          puts "\n"
          puts @text
+         return true
       elsif [@two,@five,@eight] == %W[X X X] || [@two,@five,@eight] == %W[O O O]
          puts "\n"
          puts @text
       elsif [@three,@six,@nine] == %W[X X X] || [@three,@six,@nine] == %W[O O O]
          puts "\n"
          puts @text
+         return true
       elsif [@one,@five,@nine] == %W[X X X] || [@one,@five,@nine] == %W[O O O]
          puts "\n"
          puts @text
+         return true
       elsif [@three,@five,@seven] == %W[X X X] || [@three,@five,@seven] == %W[O O O]
          puts "\n"
          puts @text
+         return true
       end
     end
 
@@ -70,9 +77,7 @@ player2 = Players.new("X")
 
 
 board = Board.new("",1,2,3,4,5,6,7,8,9)
- 
 board.display_board
-
 
 count = 9
 
@@ -130,4 +135,5 @@ end
 board.display_board
 board.game_result
 count -= 1
+break if board.game_result == true
 end
