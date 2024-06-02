@@ -26,40 +26,50 @@
     puts horiz_line1
     puts third_row
     puts new_line
+    puts "player1 == O"
+    puts "player2 == X"
     end
 
     def game_result
       if [@one,@two,@three] == %W[X X X] ||  [@one,@two,@three] == %W[O O O]
          puts "\n"
          puts @text
+         puts "\n"
          return true
       elsif [@four,@five,@six] == %W[X X X] || [@four,@five,@six] == %W[O O O]
          puts "\n"
          puts @text
+         puts "\n"
          return true
       elsif [@seven,@eight,@nine] == %W[X X X] ||  [@seven,@eight,@nine] == %W[O O O]
          puts "\n"
          puts @text
+         puts "\n"
          return true
       elsif [@one,@four,@seven] == %W[X X X] ||  [@one,@four,@seven] == %W[O O O]
          puts "\n"
          puts @text
+         puts "\n"
          return true
       elsif [@two,@five,@eight] == %W[X X X] || [@two,@five,@eight] == %W[O O O]
          puts "\n"
          puts @text
+         puts "\n"
          return true
       elsif [@three,@six,@nine] == %W[X X X] || [@three,@six,@nine] == %W[O O O]
          puts "\n"
          puts @text
+         puts "\n"
          return true
       elsif [@one,@five,@nine] == %W[X X X] || [@one,@five,@nine] == %W[O O O]
          puts "\n"
          puts @text
+         puts "\n"
          return true
       elsif [@three,@five,@seven] == %W[X X X] || [@three,@five,@seven] == %W[O O O]
          puts "\n"
          puts @text
+         puts "\n"
          return true
       end
     end
@@ -128,9 +138,9 @@ else
 end
 
 if count.odd?
-   board.text = "Player1 Won the game"
+   board.text = "<==Player1 Won the game, congrats you are a gigachad==>"
 else 
-   board.text = "player2 Won the game"
+   board.text = "<==player2 Won the game,congrats you are a gigachad==>"
 end
 
 board.display_board
