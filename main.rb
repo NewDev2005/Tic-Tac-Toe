@@ -48,6 +48,7 @@
       elsif [@two,@five,@eight] == %W[X X X] || [@two,@five,@eight] == %W[O O O]
          puts "\n"
          puts @text
+         return true
       elsif [@three,@six,@nine] == %W[X X X] || [@three,@six,@nine] == %W[O O O]
          puts "\n"
          puts @text
@@ -133,7 +134,6 @@ else
 end
 
 board.display_board
-board.game_result
 count -= 1
 break if board.game_result == true
 end
